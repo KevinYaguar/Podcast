@@ -6,7 +6,7 @@ body {
 /*Mobil*/
 @media (min-width: 280px) and (max-width: 479px) {
   header {
-    background-color: white;
+    background-color: red;
   }
   .nav {
     display: -webkit-box;
