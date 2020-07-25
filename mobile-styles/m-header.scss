@@ -10,16 +10,19 @@ header {
     height: 44px;
 
     img {
-        position: relative;
-        left: 16px;
+        padding: 10px 0 10px 16px;
         width: 24px;
         height: 24px;
     }
+    
+
 }
 
+
 .navegador {
-    position: relative;
-    right: 19px;
+    padding: 19px 19px 16px 0px;
+    width: 18px;
+    height: 12px;
 
     label:hover {
         cursor: pointer;

@@ -9,16 +9,19 @@ body{
     @import "./mobile-styles/m-header.scss";
     @import "./mobile-styles/m-main.scss";
     @import "./mobile-styles/m-footer.scss";
+    @import "./mobile-styles/mobil.scss";
 }
 /*Inter*/
 @media (min-width:480px) and (max-width:1199px) {
     @import "./inter-styles/i-header.scss";
     @import "./inter-styles/i-main.scss";
     @import "./inter-styles/i-footer.scss";
+    @import "./mobile-styles/mobil.scss";
 }
 /*Desktop*/
 @media (min-width:1200px) {
     @import "./desktop-styles/d-header.scss";
     @import "./desktop-styles/d-main.scss";
     @import "./desktop-styles/d-footer.scss";
+    @import "./mobile-styles/mobil.scss";
 }
