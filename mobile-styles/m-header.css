@@ -1,5 +1,7 @@
 header {
   background-color: white;
+  position: relative;
+  left: 16px;
 }
 
 .nav {
@@ -17,7 +19,7 @@ header {
 }
 
 .nav img {
-  padding: 10px 0 10px 16px;
+  padding: 10px 0 10px;
   width: 24px;
   height: 24px;
 }
@@ -78,5 +80,60 @@ header {
   display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hello p {
+  margin: 0;
+  font-size: 36px;
+  height: 42px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #060A24;
+}
+
+.hello .hello {
+  width: 85px;
+}
+
+.hello .world {
+  width: 101px;
+  text-decoration: line-through;
+}
+
+.hello .pale {
+  width: 212px;
+}
+
+.hello .dot {
+  width: 10px;
+}
+
+.portal {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+  font-size: 14px;
+  line-height: 22px;
+  width: 288px;
+  height: 66px;
+}
+
+.conoce {
+  background-color: #00F3BB;
+  width: 288px;
+  height: 48px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.conoce p {
+  padding: 13px 96px 13px 96px;
 }
 /*# sourceMappingURL=m-header.css.map */
