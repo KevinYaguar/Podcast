@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/271d5efdfe.js" crossorigin="anonymous"></script>
     <title>Podcast</title>
 </head>
@@ -15,10 +16,10 @@
 <body>
     <header>
         <div class="nav">
-            <img src="/img/logo.svg" alt="logo">
+            <img src="./img/logo.svg" alt="logo">
             <div class="navegador">
                 <input type="checkbox" name="nav" id="btn-menu">
-                <label for="btn-menu"><i class="fas fa-bars" ></i></label>
+                <label for="btn-menu"><i class="fas fa-bars"></i></label>
                 <nav class="menu">
                     <ul>
                         <li><a href="">EPISODIOS</a></li>
@@ -30,30 +31,45 @@
             </div>
         </div>
 
-        <div class="hello"><p class="hello">Hello</p> <p class="world"> world</p><p class="pale"> pale blue dot</p><p class="dot">.</p></div>
-        <div class="portal"> <p> Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p></div>
-        <div class="conoce"> <p> CONOCÉ MÁS </p></div>
+        <div class="heading">
+            <p class="hello">Hello</p>
+            <p class="world"> world</p>
+            <p class="pale"> pale blue dot</p>
+            <p class="dot">.</p>
+        </div>
+        <div class="first-description">
+            <p> Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+        </div>
+        <div class="conoce">
+            <p> CONOCÉ MÁS </p>
+        </div>
         <br><br><br>
     </header>
     <main>
-        <div class="episodios"><p> Episodios </p></div>
+        <div class="episodios">
+            <p> Episodios </p>
+        </div>
         <div class="podcast">
             <img src="/img/embed1.png" alt="">
             <img src="/img/embed2.png" alt="">
             <img src="/img/embed3.png" alt="">
-            <img src="/img/embed4.png" alt="">
+            <img src="/img/embed4.png" alt="" class="lastone">
         </div>
         <div class="de-donde-venimos">
             <img src="/img/phone.png" alt="">
-            <div class="donde">De dónde venimos</div>
-            <div class="posturings">
-                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
-                Universe, are challenged by this point of pale light. <br>
-                Our planet is lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
-                there is no hint that help will come from elsewhere to save us from ourselves.
-            </div>
         </div>
-        <div class="invitados estelares">Invitadas/os estelares</div>
+        <div class="donde">
+            <p>De dónde <br> venimos</p> 
+        </div>
+        <div class="posturings">
+            Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+            Universe, are challenged by this point of pale light. <br>
+            Our planet is lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+            there is no hint that help will come from elsewhere to save us from ourselves.
+        </div>
+
+        <div class="invitados">
+            <p> Invitadas/os estelares </p></div>
         <div class="galeria">
             <img src="/img/grace-hopper.png" alt="">
             <img src="/img/Katie-Bouman.png" alt="">

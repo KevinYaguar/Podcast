@@ -1,8 +1,77 @@
 main{
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    img{
-        width: 298px;
-        height: 225px;
+    
+    .lastone{
+        padding-bottom: 48px;
     }
 }
 
+.podcast{
+    img{
+        width: 298px;
+        height: 225px;
+        padding: 0px 11px 11px 11px;
+    }
+}
+
+.episodios{
+    width: 157px;
+    height: 42px;
+    color: #FFFFFF;
+    padding: 64px 147px 21px 16px;
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.de-donde-venimos{
+    display: flex;
+    width: 360px;
+    position: relative;
+    left: -20px;
+    height: 519px;
+    img{
+        width: 100%;
+    }
+    
+}
+
+.donde{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    font-size: 36px;
+    line-height: 42px;
+    height: 84px;
+    width: 288px;
+    padding: 27px 16px 8px 16px;
+}
+.posturings{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    font-size: 14px;
+    line-height: 22px;
+    height: 254px;
+    width: 288px;
+    padding: 0px 16px 54px 16px;
+}
+
+.invitados{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    font-size: 36px;
+    line-height: 42px;
+    height: 84px;
+    width: 288px;
+    padding: 0px 16px 14px 16px;
+}
+
+
+
+
+.galeria{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    img{
+        width: 100%;
+    }
+}

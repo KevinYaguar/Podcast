@@ -1,7 +1,8 @@
 header {
     background-color: white;
     position: relative;
-    left: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     
 }
 
@@ -13,32 +14,33 @@ header {
     height: 44px;
 
     img {
-        padding: 10px 0 10px ;
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 24px;
         height: 24px;
     }
 
-
-}
-
-
-.navegador {
-    padding: 19px 19px 16px 0px;
-    width: 18px;
-    height: 12px;
-
-    label:hover {
-        cursor: pointer;
-    }
-
-    #btn-menu {
-        display: none;
-    }
-
-    .menu {
-        display: none;
+    .navegador {
+        padding: 16px 19px 16px 0px;
+        width: 18px;
+        height: 12px;
+    
+        label:hover {
+            cursor: pointer;
+        }
+    
+        #btn-menu {
+            display: none;
+        }
+    
+        .menu {
+            display: none;
+        }
     }
 }
+
+
+
 
 #btn-menu:checked~.menu {
     display: flex;
@@ -73,10 +75,10 @@ header {
     }
 }
 
-.hello {
+.heading {
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 29px 82px 16px 16px;
 
     p {
         margin: 0;
@@ -91,6 +93,7 @@ header {
     .world{
         width: 101px;
         text-decoration: line-through;
+        text-align: end;
     }
     .pale{
         width: 212px;
@@ -99,14 +102,17 @@ header {
         width: 10px;
     }
 }
-.portal{
+.first-description{
     font-family: 'IBM Plex Mono', monospace;
     color: #060A24;
     font-size: 14px;
     line-height: 22px;
     width: 288px;
     height: 66px;
+    padding-left: 16px;
+    padding: 16px;
 }
+
 
 .conoce{
     background-color: #00F3BB;
@@ -115,8 +121,12 @@ header {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: 500;
+    margin: 36px 16px 24px 16px;
     p{
         padding: 13px 96px 13px 96px;
     }
 
 }
+
+/*PARA LOS ESPACIOS ENTRE NAV HELLO Y DEMAS
+USAR PADDIN*/
