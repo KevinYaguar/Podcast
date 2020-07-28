@@ -131,23 +131,48 @@ body {
   }
   main {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    /*
+    .lastone {
+        padding-bottom: 48px;
+    }*/
   }
-  main .lastone {
-    padding-bottom: 48px;
+  main section {
+    padding-left: 11px;
+    padding-right: 11px;
   }
-  .podcast img {
+  main section h2 {
+    width: 157px;
+    height: 42px;
+    color: #FFFFFF;
+    font-weight: 100;
+    padding: 64px 147px 21px 5px;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  main section .podcasts img {
     width: 298px;
     height: 225px;
-    padding: 0px 11px 11px 11px;
+    padding-bottom: 11px;
   }
-  .episodios {
+  /*
+.podcasts {
+    img {
+        width: 298px;
+        height: 225px;
+        padding: 0px 11px 11px 11px;
+    }
+}
+
+.episodios {
     width: 157px;
     height: 42px;
     color: #FFFFFF;
     padding: 64px 147px 21px 16px;
     font-size: 36px;
     font-family: 'IBM Plex Sans', sans-serif;
-  }
+}
+*/
   .de-donde-venimos {
     display: -webkit-box;
     display: -ms-flexbox;
