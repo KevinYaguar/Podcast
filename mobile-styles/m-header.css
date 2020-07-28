@@ -1,11 +1,54 @@
 header {
-  background-color: white;
-  position: relative;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-nav {
+header header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+header header p {
+  margin: 0;
+  font-size: 36px;
+  height: 42px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #060A24;
+}
+
+header header .hello {
+  width: 85px;
+}
+
+header header .world {
+  width: 101px;
+  text-decoration: line-through;
+  text-align: end;
+}
+
+header header .pale {
+  width: 212px;
+}
+
+header header .dot {
+  width: 10px;
+}
+
+header p {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+  font-size: 14px;
+  line-height: 22px;
+  width: 288px;
+  height: 66px;
+  padding-top: 16px;
+}
+
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,14 +62,14 @@ nav {
   height: 44px;
 }
 
-nav img {
+header nav img {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 24px;
   height: 24px;
 }
 
-nav nav {
+header nav nav {
   /*.navegador*/
   padding-top: 16px;
   padding-bottom: 16px;
@@ -35,19 +78,19 @@ nav nav {
   height: 12px;
 }
 
-nav nav label:hover {
+header nav nav label:hover {
   cursor: pointer;
 }
 
-nav nav #btn-menu {
+header nav nav #btn-menu {
   display: none;
 }
 
-nav nav .menu {
+header nav nav .menu {
   display: none;
 }
 
-#btn-menu:checked ~ .menu {
+header #btn-menu:checked ~ .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,63 +111,19 @@ nav nav .menu {
   height: 224px;
 }
 
-#btn-menu:checked ~ .menu li {
+header #btn-menu:checked ~ .menu li {
   width: 87px;
   height: 28px;
   padding-left: 16px;
 }
 
-#btn-menu:checked ~ .menu li a {
+header #btn-menu:checked ~ .menu li a {
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-.heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.heading p {
-  margin: 0;
-  font-size: 36px;
-  height: 42px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #060A24;
-}
-
-.heading .hello {
-  width: 85px;
-}
-
-.heading .world {
-  width: 101px;
-  text-decoration: line-through;
-  text-align: end;
-}
-
-.heading .pale {
-  width: 212px;
-}
-
-.heading .dot {
-  width: 10px;
-}
-
-.first-description {
-  font-family: 'IBM Plex Mono', monospace;
-  color: #060A24;
-  font-size: 14px;
-  line-height: 22px;
-  width: 288px;
-  height: 66px;
-  padding-top: 16px;
-}
-
-.conoce {
+header #btn-conoce {
   background-color: #00F3BB;
   width: 288px;
   height: 48px;
@@ -132,9 +131,7 @@ nav nav .menu {
   font-size: 16px;
   font-weight: 500;
   margin: 36px 0 24px 0;
-}
-
-.conoce p {
   padding: 13px 96px 13px 96px;
+  border: 0;
 }
 /*# sourceMappingURL=m-header.css.map */
