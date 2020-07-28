@@ -1,3 +1,30 @@
-footer{
-    background-color: green;
+footer {
+    background-color: white;
+}
+
+.copyright {
+    width: 227px;
+    height: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    margin: 24px 46px 16px 47px;
+
+    p {
+        padding: 13px 43px 13px 43px;
+    }
+}
+
+.social-list ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 45px 31px 45px;
+    justify-content: space-between;
+    li{
+        a{
+            color: #060A24;
+            width: 16px;
+            height: 28px;
+            size: 16px;
+        }
+    }
 }

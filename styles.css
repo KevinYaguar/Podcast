@@ -36,7 +36,9 @@ body {
     height: 24px;
   }
   .nav .navegador {
-    padding: 16px 19px 16px 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 3px;
     width: 18px;
     height: 12px;
   }
@@ -91,7 +93,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 29px 82px 16px 16px;
   }
   .heading p {
     margin: 0;
@@ -121,8 +122,7 @@ body {
     line-height: 22px;
     width: 288px;
     height: 66px;
-    padding-left: 16px;
-    padding: 16px;
+    padding-top: 16px;
   }
   .conoce {
     background-color: #00F3BB;
@@ -131,13 +131,11 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: 500;
-    margin: 36px 16px 24px 16px;
+    margin: 36px 0 24px 0;
   }
   .conoce p {
     padding: 13px 96px 13px 96px;
   }
-  /*PARA LOS ESPACIOS ENTRE NAV HELLO Y DEMAS
-USAR PADDIN*/
   main {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   }
@@ -209,8 +207,110 @@ USAR PADDIN*/
   .galeria img {
     width: 100%;
   }
+  .Algunos {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    font-size: 36px;
+    line-height: 42px;
+    height: 84px;
+    width: 288px;
+    padding: 48px 16px 37px 16px;
+  }
+  .lista ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    padding-bottom: 42px;
+  }
+  .lista ul .with-img {
+    padding: 13px 108px 13px 108px;
+  }
+  .lista ul .with-words {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    width: 288px;
+    height: 32px;
+    padding: 0px 16px 0px 16px;
+    text-align: center;
+  }
+  .lista ul .with-words a {
+    text-decoration: none;
+    color: #060A24;
+    font-weight: bold;
+  }
+  .lista ul #repensando {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    width: 288px;
+    height: 64px;
+    padding: 0px 16px 0px 16px;
+    text-align: center;
+  }
+  .lista ul #repensando a {
+    text-decoration: none;
+    color: #060A24;
+    font-weight: bold;
+  }
+  .ultimas-novedades {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    width: 288px;
+    height: 126px;
+    padding: 64px 16px 36px 16px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .escucha {
+    background-color: #00F3BB;
+    width: 288px;
+    height: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 16px 0px 16px;
+  }
+  .escucha p {
+    padding: 13px 43px 13px 43px;
+  }
   footer {
-    background-color: green;
+    background-color: white;
+  }
+  .copyright {
+    width: 227px;
+    height: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    margin: 24px 46px 16px 47px;
+  }
+  .copyright p {
+    padding: 13px 43px 13px 43px;
+  }
+  .social-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0px 45px 31px 45px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .social-list ul li a {
+    color: #060A24;
+    width: 16px;
+    height: 28px;
+    size: 16px;
   }
   body {
     display: -webkit-box;

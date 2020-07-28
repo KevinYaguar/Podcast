@@ -27,7 +27,9 @@ header {
 }
 
 .nav .navegador {
-  padding: 16px 19px 16px 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 3px;
   width: 18px;
   height: 12px;
 }
@@ -90,7 +92,6 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 29px 82px 16px 16px;
 }
 
 .heading p {
@@ -126,8 +127,7 @@ header {
   line-height: 22px;
   width: 288px;
   height: 66px;
-  padding-left: 16px;
-  padding: 16px;
+  padding-top: 16px;
 }
 
 .conoce {
@@ -137,13 +137,10 @@ header {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   font-weight: 500;
-  margin: 36px 16px 24px 16px;
+  margin: 36px 0 24px 0;
 }
 
 .conoce p {
   padding: 13px 96px 13px 96px;
 }
-
-/*PARA LOS ESPACIOS ENTRE NAV HELLO Y DEMAS
-USAR PADDIN*/
 /*# sourceMappingURL=m-header.css.map */

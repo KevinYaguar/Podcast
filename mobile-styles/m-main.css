@@ -79,4 +79,90 @@ main .lastone {
 .galeria img {
   width: 100%;
 }
+
+.Algunos {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #060A24;
+  font-size: 36px;
+  line-height: 42px;
+  height: 84px;
+  width: 288px;
+  padding: 48px 16px 37px 16px;
+}
+
+.lista ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding-bottom: 42px;
+}
+
+.lista ul .with-img {
+  padding: 13px 108px 13px 108px;
+}
+
+.lista ul .with-words {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  width: 288px;
+  height: 32px;
+  padding: 0px 16px 0px 16px;
+  text-align: center;
+}
+
+.lista ul .with-words a {
+  text-decoration: none;
+  color: #060A24;
+  font-weight: bold;
+}
+
+.lista ul #repensando {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  width: 288px;
+  height: 64px;
+  padding: 0px 16px 0px 16px;
+  text-align: center;
+}
+
+.lista ul #repensando a {
+  text-decoration: none;
+  color: #060A24;
+  font-weight: bold;
+}
+
+.ultimas-novedades {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  width: 288px;
+  height: 126px;
+  padding: 64px 16px 36px 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.escucha {
+  background-color: #00F3BB;
+  width: 288px;
+  height: 48px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 16px 0px 16px;
+}
+
+.escucha p {
+  padding: 13px 43px 13px 43px;
+}
 /*# sourceMappingURL=m-main.css.map */
