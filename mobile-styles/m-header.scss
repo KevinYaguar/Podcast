@@ -6,7 +6,7 @@ header {
     
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@ header {
         height: 24px;
     }
 
-    .navegador {
+    nav { /*.navegador*/
         padding-top: 16px;
         padding-bottom: 16px;
         padding-right: 3px;
@@ -46,22 +46,20 @@ header {
 
 #btn-menu:checked~.menu {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     background-color: #0000EC;
     position: fixed;
     left: 0;
     top: 44px;
-
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style: none;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        height: 224px;
+    list-style: none;       
+    padding: 0;
+    margin: 0;
+    height: 224px;
+        
+        
+        
 
         li {
             width: 87px;
@@ -74,8 +72,8 @@ header {
                 text-decoration: none;
             }
         }
-    }
 }
+
 
 .heading {
     display: flex;

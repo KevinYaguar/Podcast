@@ -5,7 +5,7 @@ header {
   padding-right: 16px;
 }
 
-.nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,14 +19,15 @@ header {
   height: 44px;
 }
 
-.nav img {
+nav img {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 24px;
   height: 24px;
 }
 
-.nav .navegador {
+nav nav {
+  /*.navegador*/
   padding-top: 16px;
   padding-bottom: 16px;
   padding-right: 3px;
@@ -34,30 +35,19 @@ header {
   height: 12px;
 }
 
-.nav .navegador label:hover {
+nav nav label:hover {
   cursor: pointer;
 }
 
-.nav .navegador #btn-menu {
+nav nav #btn-menu {
   display: none;
 }
 
-.nav .navegador .menu {
+nav nav .menu {
   display: none;
 }
 
 #btn-menu:checked ~ .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-color: #0000EC;
-  position: fixed;
-  left: 0;
-  top: 44px;
-}
-
-#btn-menu:checked ~ .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,20 +57,24 @@ header {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  list-style: none;
   width: 100%;
+  background-color: #0000EC;
+  position: fixed;
+  left: 0;
+  top: 44px;
+  list-style: none;
   padding: 0;
   margin: 0;
   height: 224px;
 }
 
-#btn-menu:checked ~ .menu ul li {
+#btn-menu:checked ~ .menu li {
   width: 87px;
   height: 28px;
   padding-left: 16px;
 }
 
-#btn-menu:checked ~ .menu ul li a {
+#btn-menu:checked ~ .menu li a {
   display: block;
   color: #fff;
   text-decoration: none;
