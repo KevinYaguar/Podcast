@@ -1,9 +1,5 @@
 main {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  /*
-    .lastone {
-        padding-bottom: 48px;
-    }*/
 }
 
 main section {
@@ -28,25 +24,7 @@ main section .podcasts img {
   padding-bottom: 11px;
 }
 
-/*
-.podcasts {
-    img {
-        width: 298px;
-        height: 225px;
-        padding: 0px 11px 11px 11px;
-    }
-}
-
-.episodios {
-    width: 157px;
-    height: 42px;
-    color: #FFFFFF;
-    padding: 64px 147px 21px 16px;
-    font-size: 36px;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-*/
-.de-donde-venimos {
+.phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +34,7 @@ main section .podcasts img {
   height: 519px;
 }
 
-.de-donde-venimos img {
+.phone img {
   width: 100%;
 }
 
@@ -68,6 +46,7 @@ main section .podcasts img {
   height: 84px;
   width: 288px;
   padding: 27px 16px 8px 16px;
+  font-weight: 100;
 }
 
 .posturings {

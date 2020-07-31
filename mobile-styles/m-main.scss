@@ -24,34 +24,10 @@ main {
             }
         }
     }
-
-
-
-    /*
-    .lastone {
-        padding-bottom: 48px;
-    }*/
 }
 
-/*
-.podcasts {
-    img {
-        width: 298px;
-        height: 225px;
-        padding: 0px 11px 11px 11px;
-    }
-}
 
-.episodios {
-    width: 157px;
-    height: 42px;
-    color: #FFFFFF;
-    padding: 64px 147px 21px 16px;
-    font-size: 36px;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-*/
-.de-donde-venimos {
+.phone {
     display: flex;
     width: 360px;
     position: relative;
@@ -72,7 +48,18 @@ main {
     height: 84px;
     width: 288px;
     padding: 27px 16px 8px 16px;
+    font-weight: 100;
 }
+
+
+
+
+
+
+
+
+
+
 
 .posturings {
     font-family: 'IBM Plex Mono', monospace;
