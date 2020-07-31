@@ -1,5 +1,19 @@
 footer {
     background-color: white;
+    .social-list {
+        display: flex;
+        list-style: none;
+        padding: 0px 45px 31px 45px;
+        justify-content: space-between;
+        li{
+            a{
+                color: #060A24;
+                width: 16px;
+                height: 28px;
+                size: 16px;
+            }
+        }
+    }
 }
 
 .copyright {
@@ -14,17 +28,3 @@ footer {
     }
 }
 
-.social-list ul {
-    display: flex;
-    list-style: none;
-    padding: 0px 45px 31px 45px;
-    justify-content: space-between;
-    li{
-        a{
-            color: #060A24;
-            width: 16px;
-            height: 28px;
-            size: 16px;
-        }
-    }
-}

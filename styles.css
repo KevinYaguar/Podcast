@@ -9,7 +9,7 @@ body {
 }
 
 /*Mobil*/
-@media (max-width: 479px) {
+@media (max-width: 1119px) {
   header {
     padding-left: 16px;
     padding-right: 16px;
@@ -146,9 +146,9 @@ body {
     line-height: 42px;
     font-family: 'IBM Plex Sans', sans-serif;
   }
-  main section .podcasts img {
-    width: 298px;
-    height: 225px;
+  main section .podcasts iframe {
+    width: 100%;
+    height: 232px;
     padding-bottom: 11px;
   }
   .phone {
@@ -163,7 +163,7 @@ body {
   .phone img {
     width: 100%;
   }
-  .donde {
+  .donde h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #060A24;
     font-size: 36px;
@@ -173,7 +173,7 @@ body {
     padding: 27px 16px 8px 16px;
     font-weight: 100;
   }
-  .posturings {
+  .posturings p {
     font-family: 'IBM Plex Mono', monospace;
     color: #060A24;
     font-size: 14px;
@@ -182,7 +182,7 @@ body {
     width: 288px;
     padding: 0px 16px 54px 16px;
   }
-  .invitados {
+  .invitados h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #060A24;
     font-size: 36px;
@@ -190,6 +190,7 @@ body {
     height: 84px;
     width: 288px;
     padding: 0px 16px 14px 16px;
+    font-weight: 100;
   }
   .galeria {
     width: 100%;
@@ -204,7 +205,7 @@ body {
   .galeria img {
     width: 100%;
   }
-  .Algunos {
+  .Algunos h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #060A24;
     font-size: 36px;
@@ -212,8 +213,9 @@ body {
     height: 84px;
     width: 288px;
     padding: 48px 16px 37px 16px;
+    font-weight: 100;
   }
-  .lista ul {
+  .lista {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -227,10 +229,10 @@ body {
     list-style: none;
     padding-bottom: 42px;
   }
-  .lista ul .with-img {
+  .lista .with-img {
     padding: 13px 108px 13px 108px;
   }
-  .lista ul .with-words {
+  .lista .with-words {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     line-height: 32px;
@@ -239,12 +241,12 @@ body {
     padding: 0px 16px 0px 16px;
     text-align: center;
   }
-  .lista ul .with-words a {
+  .lista .with-words a {
     text-decoration: none;
     color: #060A24;
     font-weight: bold;
   }
-  .lista ul #repensando {
+  .lista #repensando {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     line-height: 32px;
@@ -253,7 +255,7 @@ body {
     padding: 0px 16px 0px 16px;
     text-align: center;
   }
-  .lista ul #repensando a {
+  .lista #repensando a {
     text-decoration: none;
     color: #060A24;
     font-weight: bold;
@@ -275,13 +277,29 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: 500;
-    margin: 0px 16px 0px 16px;
+    margin: 0px 16px 67px 16px;
   }
   .escucha p {
     padding: 13px 43px 13px 43px;
   }
   footer {
     background-color: white;
+  }
+  footer .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0px 45px 31px 45px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .social-list li a {
+    color: #060A24;
+    width: 16px;
+    height: 28px;
+    size: 16px;
   }
   .copyright {
     width: 227px;
@@ -293,22 +311,6 @@ body {
   .copyright p {
     padding: 13px 43px 13px 43px;
   }
-  .social-list ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    padding: 0px 45px 31px 45px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .social-list ul li a {
-    color: #060A24;
-    width: 16px;
-    height: 28px;
-    size: 16px;
-  }
   body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,28 +322,16 @@ body {
   }
 }
 
-/*Inter*/
-@media (min-width: 480px) and (max-width: 1199px) {
-  header {
-    background-color: red;
-  }
-  main {
-    background-color: yellow;
-  }
-  footer {
-    background-color: green;
-  }
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+/*
+
+@media (min-width:480px) and (max-width:1199px) {
+    @import "./inter-styles/i-header.scss";
+    @import "./inter-styles/i-main.scss";
+    @import "./inter-styles/i-footer.scss";
+    @import "./mobile-styles/mobil.scss";
 }
 
+*/
 /*Desktop*/
 @media (min-width: 1200px) {
   header {
