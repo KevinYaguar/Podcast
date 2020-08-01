@@ -1,3 +1,12 @@
+%h2{
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+}
+%dark-color{color: #060A24;}
+
+
 header {
     padding-left: 16px;
     padding-right: 16px;
@@ -7,12 +16,9 @@ header {
         flex-wrap: wrap;
         padding: 0;
 
-        p {
-            margin: 0;
-            font-size: 36px;
-            height: 42px;
-            font-family: 'IBM Plex Sans', sans-serif;
-            color: #060A24;
+        h2{
+            @extend %h2;
+            @extend %dark-color;           
         }
 
         .hello {
@@ -36,7 +42,7 @@ header {
 
     p {
         font-family: 'IBM Plex Mono', monospace;
-        color: #060A24;
+        @extend %dark-color;
         font-size: 14px;
         line-height: 22px;
         width: 288px;

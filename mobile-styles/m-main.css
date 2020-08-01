@@ -1,30 +1,39 @@
-main {
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .three .ultimas-novedades {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
 }
 
-main section {
+main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
+  color: #060A24;
+}
+
+main .one {
+  background: linear-gradient(174deg, #fff 3%, #0000FF 3.1%, #0000A3);
   padding-left: 11px;
   padding-right: 11px;
 }
 
-main section h2 {
+main .one h2 {
   width: 157px;
   height: 42px;
   color: #FFFFFF;
-  font-weight: 100;
   padding: 64px 147px 21px 5px;
-  font-size: 36px;
-  line-height: 42px;
-  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-main section .podcasts iframe {
+main .one .podcasts {
+  padding-bottom: 37px;
+}
+
+main .one .podcasts iframe {
   width: 100%;
   height: 232px;
   padding-bottom: 11px;
+  border: 0;
 }
 
-.phone {
+main .two .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,24 +43,18 @@ main section .podcasts iframe {
   height: 519px;
 }
 
-.phone img {
+main .two .phone img {
   width: 100%;
 }
 
-.donde h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #060A24;
-  font-size: 36px;
-  line-height: 42px;
+main .two .donde {
   height: 84px;
   width: 288px;
   padding: 27px 16px 8px 16px;
-  font-weight: 100;
 }
 
-.posturings p {
+main .two .posturings p {
   font-family: 'IBM Plex Mono', monospace;
-  color: #060A24;
   font-size: 14px;
   line-height: 22px;
   height: 254px;
@@ -59,18 +62,13 @@ main section .podcasts iframe {
   padding: 0px 16px 54px 16px;
 }
 
-.invitados h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #060A24;
-  font-size: 36px;
-  line-height: 42px;
+main .two .invitados {
   height: 84px;
   width: 288px;
   padding: 0px 16px 14px 16px;
-  font-weight: 100;
 }
 
-.galeria {
+main .two .galeria {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,22 +79,17 @@ main section .podcasts iframe {
           flex-direction: column;
 }
 
-.galeria img {
+main .two .galeria img {
   width: 100%;
 }
 
-.Algunos h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #060A24;
-  font-size: 36px;
-  line-height: 42px;
+main .two .algunos {
   height: 84px;
   width: 288px;
   padding: 48px 16px 37px 16px;
-  font-weight: 100;
 }
 
-.lista {
+main .two .lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,11 +104,11 @@ main section .podcasts iframe {
   padding-bottom: 42px;
 }
 
-.lista .with-img {
+main .two .lista .with-img {
   padding: 13px 108px 13px 108px;
 }
 
-.lista .with-words {
+main .two .lista .with-words {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   line-height: 32px;
@@ -125,13 +118,12 @@ main section .podcasts iframe {
   text-align: center;
 }
 
-.lista .with-words a {
+main .two .lista .with-words a {
   text-decoration: none;
-  color: #060A24;
   font-weight: bold;
 }
 
-.lista #repensando {
+main .two .lista #repensando {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   line-height: 32px;
@@ -141,16 +133,12 @@ main section .podcasts iframe {
   text-align: center;
 }
 
-.lista #repensando a {
+main .two .lista #repensando a {
   text-decoration: none;
-  color: #060A24;
   font-weight: bold;
 }
 
-.ultimas-novedades {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 36px;
-  line-height: 42px;
+main .three .ultimas-novedades {
   width: 288px;
   height: 126px;
   padding: 64px 16px 36px 16px;
@@ -158,7 +146,7 @@ main section .podcasts iframe {
   color: #FFFFFF;
 }
 
-.escucha {
+main .three .escucha {
   background-color: #00F3BB;
   width: 288px;
   height: 48px;
@@ -168,7 +156,7 @@ main section .podcasts iframe {
   margin: 0px 16px 67px 16px;
 }
 
-.escucha p {
+main .three .escucha p {
   padding: 13px 43px 13px 43px;
 }
 /*# sourceMappingURL=m-main.css.map */

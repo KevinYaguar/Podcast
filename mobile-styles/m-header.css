@@ -1,3 +1,14 @@
+header header h2 {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+}
+
+header header h2, header p {
+  color: #060A24;
+}
+
 header {
   padding-left: 16px;
   padding-right: 16px;
@@ -10,14 +21,6 @@ header header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-}
-
-header header p {
-  margin: 0;
-  font-size: 36px;
-  height: 42px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #060A24;
 }
 
 header header .hello {
@@ -40,7 +43,6 @@ header header .dot {
 
 header p {
   font-family: 'IBM Plex Mono', monospace;
-  color: #060A24;
   font-size: 14px;
   line-height: 22px;
   width: 288px;
