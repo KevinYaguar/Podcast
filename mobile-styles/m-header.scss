@@ -78,15 +78,25 @@ header {
             #btn-menu {
                 display: none;
             }
-    
-            .menu {
-                display: none;
-            }
+            
         }
     }
     
-    
-    
+    #btn-menu:not(checked)~.menu {
+        display: none;
+    }
+    #btn-menu:not(checked)~ label .fa-times{
+        display: none;
+    }
+    #btn-menu:checked~ label .fa-times{
+        display: flex;
+    }
+
+
+    #btn-menu:checked + label .fa-bars{
+        display: none;
+    }
+
     
     #btn-menu:checked~.menu {
         display: flex;
@@ -101,7 +111,7 @@ header {
         padding: 0;
         margin: 0;
         height: 224px;
-    
+        
         li {
             width: 87px;
             height: 28px;
@@ -125,6 +135,10 @@ header {
         margin: 36px 0 24px 0;
         padding: 13px 96px 13px 96px;
         border: 0;
+    }
+    #btn-conoce:hover {
+        color: #fff;
+        background: linear-gradient(to right, #00F0B8,#0000FE);
     }
 }
 
