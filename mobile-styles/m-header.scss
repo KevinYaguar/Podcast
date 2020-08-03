@@ -91,6 +91,7 @@ header {
     #btn-menu:checked~ label .fa-times{
         display: flex;
     }
+<<<<<<< HEAD
 
 
     #btn-menu:checked + label .fa-bars{
@@ -98,6 +99,11 @@ header {
     }
 
     
+=======
+    #btn-menu:checked + label .fa-bars{
+        display: none;
+    }
+>>>>>>> 6fdc16f845c7021d70b98d94f7769a8fac58193e
     #btn-menu:checked~.menu {
         display: flex;
         flex-direction: column;
