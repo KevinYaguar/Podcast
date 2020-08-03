@@ -88,7 +88,21 @@ header nav nav #btn-menu {
   display: none;
 }
 
-header nav nav .menu {
+header #btn-menu:not(checked) ~ .menu {
+  display: none;
+}
+
+header #btn-menu:not(checked) ~ label .fa-times {
+  display: none;
+}
+
+header #btn-menu:checked ~ label .fa-times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #btn-menu:checked + label .fa-bars {
   display: none;
 }
 
@@ -135,5 +149,11 @@ header #btn-conoce {
   margin: 36px 0 24px 0;
   padding: 13px 96px 13px 96px;
   border: 0;
+}
+
+header #btn-conoce:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+  background: linear-gradient(to right, #00F0B8, #0000FE);
 }
 /*# sourceMappingURL=m-header.css.map */
