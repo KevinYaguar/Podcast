@@ -1,23 +1,11 @@
 footer {
   background-color: white;
-}
-
-footer .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  padding: 0px 45px 31px 45px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-footer .social-list li a {
-  color: #060A24;
-  width: 16px;
-  height: 28px;
-  size: 16px;
 }
 
 .copyright {
@@ -25,10 +13,32 @@ footer .social-list li a {
   height: 22px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
-  margin: 24px 46px 16px 47px;
+  margin: 36px 0px 31px 100px;
 }
 
 .copyright p {
   padding: 13px 43px 13px 43px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-right: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-list li {
+  padding: 36px 0px 31px 36px;
+}
+
+.social-list li a {
+  color: #060A24;
+  width: 16px;
+  height: 28px;
+  size: 16px;
 }
 /*# sourceMappingURL=d-footer.css.map */

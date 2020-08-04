@@ -1,19 +1,8 @@
 footer {
     background-color: white;
-    .social-list {
-        display: flex;
-        list-style: none;
-        padding: 0px 45px 31px 45px;
-        justify-content: space-between;
-        li{
-            a{
-                color: #060A24;
-                width: 16px;
-                height: 28px;
-                size: 16px;
-            }
-        }
-    }
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .copyright {
@@ -21,9 +10,25 @@ footer {
     height: 22px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
-    margin: 24px 46px 16px 47px;
+    margin: 36px 0px 31px 100px;
 
     p {
         padding: 13px 43px 13px 43px;
+    }
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    padding-right: 100px;
+    justify-content: space-between;
+    li{
+        padding: 36px 0px 31px 36px; 
+        a{
+            color: #060A24;
+            width: 16px;
+            height: 28px;
+            size: 16px;
+        }
     }
 }
