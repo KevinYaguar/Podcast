@@ -1,1 +1,163 @@
-main{background-color: yellow;}
+%h-m-2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+}
+
+%dark-color-m- {
+    color: #060A24;
+}
+
+main {
+    .one{
+        background: linear-gradient(174deg, #fff 3%, #0000FF 3.1%, #0000A3 97%, #fff 0%);
+        padding-left: 11px;
+        padding-right: 11px;
+        height: 1203.5px;
+
+        h2 {
+            width: 157px;
+            height: 42px;
+            color: #FFFFFF;
+            padding: 64px 147px 21px 5px;
+            @extend %h-m-2;
+        }
+
+        .podcasts {
+            iframe {
+                width: 100%;
+                height: 232px;
+                padding-bottom: 11px;
+                border: 0;
+
+            }
+        }
+       
+    }
+    .two{
+        position: relative;
+        top: -57px;
+        .phone {
+            display: flex;
+            width: 360px;
+            position: relative;
+            left: -20px;
+            height: 519px;
+        
+            img {
+                width: 100%;
+            }
+        
+        }
+        
+        .donde {
+            @extend %dark-color-m-;
+            height: 84px;
+            width: 288px;
+            padding: 27px 16px 8px 16px;
+            @extend %h-m-2;
+        }
+        .posturings p {
+            font-family: 'IBM Plex Mono', monospace;
+            @extend %dark-color-m-;
+            font-size: 14px;
+            line-height: 22px;
+            height: 254px;
+            width: 288px;
+            padding: 0px 16px 54px 16px;
+        }
+        .invitados {
+            @extend %dark-color-m-;
+            height: 84px;
+            width: 288px;
+            padding: 0px 16px 14px 16px;
+            @extend %h-m-2;
+        }
+        .galeria {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        
+            img {
+                width: 100%;
+            }
+        }
+        .algunos {
+            @extend %h-m-2;
+            @extend %dark-color-m-;
+            height: 84px;
+            width: 288px;
+            padding: 48px 16px 37px 16px;
+        }
+        .lista {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            padding-bottom: 42px;
+        
+            .with-img {
+                padding: 13px 108px 13px 108px;
+            }
+        
+            .with-words {
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 24px;
+                line-height: 32px;
+                width: 288px;
+                height: 32px;
+                padding: 0px 16px 0px 16px;
+                text-align: center;
+        
+                a {
+                    text-decoration: none;
+                    @extend %dark-color-m-;
+                    font-weight: bold;
+                }
+            }
+        
+            #repensando {
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 24px;
+                line-height: 32px;
+                width: 288px;
+                height: 64px;
+                padding: 0px 16px 0px 16px;
+                text-align: center;
+        
+                a {
+                    text-decoration: none;
+                    @extend %dark-color-m-;
+                    font-weight: bold;
+                }
+            }
+    }
+    
+    
+    }
+    .three{
+        background: linear-gradient(174deg, #fff 15%, #0000FF 16%, #0000A3 100%);
+        .ultimas-novedades {
+            @extend %h-m-2;
+            width: 288px;
+            height: 126px;
+            padding: 64px 16px 36px 16px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .escucha {
+            background-color: #00F3BB;
+            width: 288px;
+            height: 48px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0px 16px 67px 16px;
+        
+            p {
+                padding: 13px 43px 13px 43px;
+            }
+        }
+    }
+}

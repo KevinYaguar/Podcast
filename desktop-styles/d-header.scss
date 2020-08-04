@@ -1,1 +1,136 @@
-header{background-color: red;}
+%h-2{
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+}
+%dark--color{color: #060a24;}
+
+header{
+    padding-left: 16px;
+    padding-right: 16px;
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+
+        h2{
+            @extend %h-2;
+            @extend %dark--color
+        }
+        .hello {
+            width: 85px;
+        }
+
+        .world {
+            width: 101px;
+            text-decoration: line-through;
+            text-align: end;
+        }
+
+        .pale {
+            width: 212px;
+        }
+
+        .dot {
+            width: 10px;
+            color: blue;
+        }
+    }
+    p {
+        font-family: 'IBM Plex Mono', monospace;
+        @extend %dark--color;
+        font-size: 14px;
+        line-height: 22px;
+        width: 288px;
+        height: 66px;
+        padding-top: 16px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+    
+        img {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 24px;
+            height: 24px;
+        }
+    
+        nav {
+            /*.navegador*/
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-right: 3px;
+            width: 18px;
+            height: 12px;
+    
+            label:hover {
+                cursor: pointer;
+            }
+    
+            #btn-menu {
+                display: none;
+            }
+            
+        }
+        
+    }
+    #btn-menu:not(checked)~.menu {
+        display: none;
+    }
+    #btn-menu:not(checked)~ label .fa-times{
+        display: none;
+    }
+    #btn-menu:checked~ label .fa-times{
+        display: flex;
+    }
+    #btn-menu:checked + label .fa-bars{
+        display: none;
+    }
+    #btn-menu:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #0000EC;
+        position: fixed;
+        left: 0;
+        top: 44px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 224px;
+        
+        li {
+            width: 87px;
+            height: 28px;
+            padding-left: 16px;
+    
+            a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    #btn-conoce {
+        background-color: #00F3BB;
+        width: 288px;
+        height: 48px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 36px 0 24px 0;
+        padding: 13px 96px 13px 96px;
+        border: 0;
+    }
+    #btn-conoce:hover {
+        color: #fff;
+        background: linear-gradient(to right, #00F0B8,#0000FE);
+    }
+}
