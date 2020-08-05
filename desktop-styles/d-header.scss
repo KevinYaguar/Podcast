@@ -1,13 +1,15 @@
-%h-2 {
+/*Encabezados*/
+%h2-h-d{
     font-size: 64px;
     line-height: 84px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
 }
+/*Color oscuro*/
+%dark-color-h-d{color: #060A24;}
+/*Fuentes*/
+%font-mono-h-d{font-family: 'IBM Plex Mono', monospace;}
 
-%dark--color {
-    color: #060a24;
-}
 
 header {
     padding-left: 100px;
@@ -20,8 +22,8 @@ header {
         flex-wrap: wrap;
     
         h2 {
-            @extend %h-2;
-            @extend %dark--color
+            @extend %h2-h-d;
+            @extend %dark-color-h-d;
         }
 
         .hello {
@@ -41,13 +43,13 @@ header {
 
         .dot {
             width: 18px;
-            color: blue;
+            color: #0000ff;
         }
     }
 
     p {
-        font-family: 'IBM Plex Mono', monospace;
-        @extend %dark--color;
+        @extend %font-mono-h-d;
+        @extend %dark-color-h-d;
         font-size: 16px;
         line-height: 24px;
         width: 628px;
@@ -62,7 +64,7 @@ header {
     background-color: #00F3BB;
     width: 226px;
     height: 56px;
-    font-family: 'IBM Plex Mono', monospace;
+    @extend %font-mono-h-d;
     font-size: 18px;
     font-weight: 500;
     margin: 56px 0 5px 100px;
@@ -115,7 +117,7 @@ nav {
         .menu {
             display: flex;
             list-style: none;
-            font-family: 'IBM Plex Mono', monospace;
+            @extend %font-mono-h-d;
             font-size: 16px;
             line-height: 28px;
             font-weight: 500;
@@ -129,7 +131,7 @@ nav {
 
                 a{
                     text-decoration: none;
-                    color: #060A24 ;
+                    @extend %dark-color-h-d;
                 }
             }
         }

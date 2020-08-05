@@ -10,14 +10,20 @@ body {
 
 /*Mobil*/
 @media (max-width: 1439px) {
-  header header h2, main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .three .ultimas-novedades {
+  /*Encabezados*/
+  header header h2 {
     font-size: 36px;
     line-height: 42px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
   }
-  header header h2, header p, main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
+  /*Color oscuro*/
+  header header h2, header p {
     color: #060A24;
+  }
+  /*Fuentes*/
+  header p, header #btn-menu:checked ~ .menu, header #btn-conoce {
+    font-family: 'IBM Plex Mono', monospace;
   }
   header {
     padding-left: 16px;
@@ -46,7 +52,6 @@ body {
     width: 10px;
   }
   header p {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     line-height: 22px;
     width: 288px;
@@ -110,10 +115,10 @@ body {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100%;
+    right: 0;
+    width: 320px;
     background-color: #0000EC;
-    position: fixed;
-    left: 0;
+    position: absolute;
     top: 44px;
     list-style: none;
     padding: 0;
@@ -134,7 +139,6 @@ body {
     background-color: #00F3BB;
     width: 288px;
     height: 48px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: 500;
     margin: 36px 0 24px 0;
@@ -146,14 +150,23 @@ body {
     background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
     background: linear-gradient(to right, #00F0B8, #0000FE);
   }
-  header header h2, main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .three .ultimas-novedades {
+  /*Encabezados*/
+  main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .three .ultimas-novedades {
     font-size: 36px;
     line-height: 42px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
   }
-  header header h2, header p, main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
+  /*Color oscuro*/
+  main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
     color: #060A24;
+  }
+  /*Fuentes*/
+  main .two .posturings p, main .three .escucha {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  main .two .lista .with-words, main .two .lista #repensando {
+    font-family: 'IBM Plex Sans', sans-serif;
   }
   main .one {
     background: linear-gradient(174deg, #fff 3%, #0000FF 3.1%, #0000A3 97%, #fff 0%);
@@ -195,7 +208,6 @@ body {
     padding: 27px 16px 8px 16px;
   }
   main .two .posturings p {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     line-height: 22px;
     height: 254px;
@@ -240,10 +252,9 @@ body {
     padding-bottom: 42px;
   }
   main .two .lista .with-img {
-    padding: 13px 108px 13px 108px;
+    padding: 13px 108px;
   }
   main .two .lista .with-words {
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     line-height: 32px;
     width: 288px;
@@ -256,12 +267,11 @@ body {
     font-weight: bold;
   }
   main .two .lista #repensando {
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     line-height: 32px;
     width: 288px;
     height: 64px;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 16px;
     text-align: center;
   }
   main .two .lista #repensando a {
@@ -282,16 +292,23 @@ body {
     background-color: #00F3BB;
     width: 288px;
     height: 48px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: 500;
     margin: 0px 16px 67px 16px;
   }
   main .three .escucha p {
-    padding: 13px 43px 13px 43px;
+    padding: 13px 43px;
+  }
+  /*Color oscuro*/
+  footer .social-list li a {
+    color: #060A24;
+  }
+  /*Fuentes*/
+  .copyright {
+    font-family: 'IBM Plex Mono', monospace;
   }
   footer {
-    background-color: white;
+    background-color: #ffffff;
   }
   footer .social-list {
     display: -webkit-box;
@@ -304,15 +321,13 @@ body {
             justify-content: space-between;
   }
   footer .social-list li a {
-    color: #060A24;
     width: 16px;
     height: 28px;
-    size: 16px;
+    font-size: 16px;
   }
   .copyright {
     width: 227px;
     height: 22px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     margin: 24px 46px 16px 47px;
   }
@@ -342,14 +357,20 @@ body {
 */
 /*Desktop*/
 @media (min-width: 1440px) {
+  /*Encabezados*/
   header header h2 {
     font-size: 64px;
     line-height: 84px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
   }
-  header header h2, header p {
-    color: #060a24;
+  /*Color oscuro*/
+  header header h2, header p, nav nav .menu li a {
+    color: #060A24;
+  }
+  /*Fuentes*/
+  header p, #btn-conoce, nav nav .menu {
+    font-family: 'IBM Plex Mono', monospace;
   }
   header {
     padding-left: 100px;
@@ -377,10 +398,9 @@ body {
   }
   header header .dot {
     width: 18px;
-    color: blue;
+    color: #0000ff;
   }
   header p {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     line-height: 24px;
     width: 628px;
@@ -391,7 +411,6 @@ body {
     background-color: #00F3BB;
     width: 226px;
     height: 56px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 18px;
     font-weight: 500;
     margin: 56px 0 5px 100px;
@@ -444,7 +463,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     line-height: 28px;
     font-weight: 500;
@@ -458,16 +476,24 @@ body {
   }
   nav nav .menu li a {
     text-decoration: none;
-    color: #060A24;
   }
+  /*Encabezados*/
   main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .three .ultimas-novedades {
     font-size: 48px;
     line-height: 62px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
   }
+  /*Color oscuro*/
   main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
     color: #060A24;
+  }
+  /*Fuentes*/
+  main .two .posturings p, main .three .escucha {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  main .two .lista .with-words, main .two .lista #repensando {
+    font-family: 'IBM Plex Sans', sans-serif;
   }
   main .one {
     background: linear-gradient(174deg, #fff 14%, #0000FF 14.3%, #0000A3 87%, #fff 87.3%);
@@ -479,7 +505,7 @@ body {
     width: 209px;
     height: 62px;
     color: #FFFFFF;
-    padding: 186px 1031px 26px 200px;
+    padding: 186px 0px 26px 189px;
   }
   main .one .podcasts {
     padding: 0 100px 64px 100px;
@@ -544,7 +570,6 @@ body {
         grid-column-start: 2;
   }
   main .two .posturings p {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     line-height: 22px;
     height: 254px;
@@ -621,7 +646,6 @@ body {
     height: 104px;
   }
   main .two .lista .with-words {
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     line-height: 32px;
     width: 220px;
@@ -635,7 +659,6 @@ body {
     font-weight: bold;
   }
   main .two .lista #repensando {
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     line-height: 32px;
     width: 288px;
@@ -664,7 +687,6 @@ body {
     background-color: #00F3BB;
     width: 345px;
     height: 56px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 18px;
     font-weight: 500;
     margin: 0px 548px 151px 547px;
@@ -672,8 +694,16 @@ body {
   main .three .escucha p {
     padding: 16px 59px;
   }
+  /*Color oscuro*/
+  .social-list li a {
+    color: #060A24;
+  }
+  /*Fuentes*/
+  .copyright {
+    font-family: 'IBM Plex Mono', monospace;
+  }
   footer {
-    background-color: white;
+    background-color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -687,7 +717,6 @@ body {
   .copyright {
     width: 227px;
     height: 22px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     margin: 36px 0px 31px 100px;
   }
@@ -708,10 +737,9 @@ body {
     padding: 36px 0px 31px 36px;
   }
   .social-list li a {
-    color: #060A24;
     width: 16px;
     height: 28px;
-    size: 16px;
+    font-size: 16px;
   }
   body {
     display: -webkit-box;

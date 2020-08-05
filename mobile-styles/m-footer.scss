@@ -1,5 +1,10 @@
+/*Color oscuro*/
+%dark-color-f-m{color: #060A24;}
+/*Fuentes*/
+%font-mono-f-m{font-family: 'IBM Plex Mono', monospace;}
+
 footer {
-    background-color: white;
+    background-color: #ffffff;
     .social-list {
         display: flex;
         list-style: none;
@@ -7,10 +12,10 @@ footer {
         justify-content: space-between;
         li{
             a{
-                color: #060A24;
+                @extend %dark-color-f-m;
                 width: 16px;
                 height: 28px;
-                size: 16px;
+                font-size: 16px;                      
             }
         }
     }
@@ -19,7 +24,7 @@ footer {
 .copyright {
     width: 227px;
     height: 22px;
-    font-family: 'IBM Plex Mono', monospace;
+    @extend %font-mono-f-m;
     font-size: 14px;
     margin: 24px 46px 16px 47px;
 

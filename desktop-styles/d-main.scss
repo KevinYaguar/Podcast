@@ -1,13 +1,15 @@
-%h-m-2 {
+/*Encabezados*/
+%h2-m-d{
     font-size: 48px;
     line-height: 62px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
 }
-
-%dark-color-m- {
-    color: #060A24;
-}
+/*Color oscuro*/
+%dark-color-m-d{color: #060A24;}
+/*Fuentes*/
+%font-mono-m-d{font-family: 'IBM Plex Mono', monospace;}
+%font-sans-m-d{font-family: 'IBM Plex Sans', sans-serif;}
 
 main {
     .one {
@@ -20,8 +22,8 @@ main {
             width: 209px;
             height: 62px;
             color: #FFFFFF;
-            padding: 186px 1031px 26px 200px;
-            @extend %h-m-2;
+            padding: 186px 0px 26px 189px;
+            @extend %h2-m-d;
         }
 
         .podcasts {
@@ -69,11 +71,11 @@ main {
         }
 
         .donde {
-            @extend %dark-color-m-;
+            @extend %dark-color-m-d;
             height: 84px;
 
             align-self: end;
-            @extend %h-m-2;
+            @extend %h2-m-d;
             grid-area: 1 / 2 / span 1 / span 1;
 
         }
@@ -84,8 +86,8 @@ main {
         }
 
         .posturings p {
-            font-family: 'IBM Plex Mono', monospace;
-            @extend %dark-color-m-;
+            @extend %font-mono-m-d;
+            @extend %dark-color-m-d;
             font-size: 14px;
             line-height: 22px;
             height: 254px;
@@ -96,11 +98,11 @@ main {
 
         .invitados {
             grid-area: 3 / 1 / 4 / span 2;
-            @extend %dark-color-m-;
+            @extend %dark-color-m-d;
             height: 62px;
             width: 481px;
             padding-left: 200px;
-            @extend %h-m-2;
+            @extend %h2-m-d;
             align-self: center;
         }
 
@@ -118,8 +120,8 @@ main {
 
         .algunos {
             grid-area: 5 / 1 / span 1 / span 1;
-            @extend %h-m-2;
-            @extend %dark-color-m-;
+            @extend %h2-m-d;
+            @extend %dark-color-m-d;
             height: 62px;
             width: 586px;
             align-self: center;
@@ -145,7 +147,7 @@ main {
             }
 
             .with-words {
-                font-family: 'IBM Plex Sans', sans-serif;
+                @extend %font-sans-m-d;
                 font-size: 24px;
                 line-height: 32px;
                 width: 220px;
@@ -155,13 +157,13 @@ main {
 
                 a {
                     text-decoration: none;
-                    @extend %dark-color-m-;
+                    @extend %dark-color-m-d;
                     font-weight: bold;
                 }
             }
 
             #repensando {
-                font-family: 'IBM Plex Sans', sans-serif;
+                @extend %font-sans-m-d;
                 font-size: 24px;
                 line-height: 32px;
                 width: 288px;
@@ -171,7 +173,7 @@ main {
 
                 a {
                     text-decoration: none;
-                    @extend %dark-color-m-;
+                    @extend %dark-color-m-d;
                     font-weight: bold;
                 }
             }
@@ -187,7 +189,7 @@ main {
         top: 3299px;
 
         .ultimas-novedades {
-            @extend %h-m-2;
+            @extend %h2-m-d;
             width: 692px;
             height: 62px;
             padding: 213px 374px 36px 374px;
@@ -199,7 +201,7 @@ main {
             background-color: #00F3BB;
             width: 345px;
             height: 56px;
-            font-family: 'IBM Plex Mono', monospace;
+            @extend %font-mono-m-d;
             font-size: 18px;
             font-weight: 500;
             margin: 0px 548px 151px 547px;

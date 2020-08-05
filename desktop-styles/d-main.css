@@ -1,3 +1,4 @@
+/*Encabezados*/
 main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .three .ultimas-novedades {
   font-size: 48px;
   line-height: 62px;
@@ -5,8 +6,18 @@ main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .
   font-weight: 100;
 }
 
+/*Color oscuro*/
 main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
   color: #060A24;
+}
+
+/*Fuentes*/
+main .two .posturings p, main .three .escucha {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+main .two .lista .with-words, main .two .lista #repensando {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 main .one {
@@ -20,7 +31,7 @@ main .one h2 {
   width: 209px;
   height: 62px;
   color: #FFFFFF;
-  padding: 186px 1031px 26px 200px;
+  padding: 186px 0px 26px 189px;
 }
 
 main .one .podcasts {
@@ -94,7 +105,6 @@ main .two .posturings {
 }
 
 main .two .posturings p {
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
   line-height: 22px;
   height: 254px;
@@ -178,7 +188,6 @@ main .two .lista .with-img {
 }
 
 main .two .lista .with-words {
-  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   line-height: 32px;
   width: 220px;
@@ -194,7 +203,6 @@ main .two .lista .with-words a {
 }
 
 main .two .lista #repensando {
-  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   line-height: 32px;
   width: 288px;
@@ -227,7 +235,6 @@ main .three .escucha {
   background-color: #00F3BB;
   width: 345px;
   height: 56px;
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-weight: 500;
   margin: 0px 548px 151px 547px;
