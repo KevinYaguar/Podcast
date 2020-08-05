@@ -43,10 +43,10 @@ main {
     }
 
     .two {
-        position: relative;
-        top: -57px;
+        position: absolute;
+        top: 1323px;
         display: grid;
-        grid-template: 330px 330px 62px 728px 62px 197px / repeat(2, 1fr);
+        grid-template: 330px 330px 162px 728px 182px 197px / repeat(2, 1fr);
 
 
         .phone {
@@ -101,6 +101,7 @@ main {
             width: 481px;
             padding-left: 200px;
             @extend %h-m-2;
+            align-self: center;
         }
 
         .galeria {
@@ -116,34 +117,40 @@ main {
         }
 
         .algunos {
-            grid-area: 5 / 1 / span 1 / span 2;
+            grid-area: 5 / 1 / span 1 / span 1;
             @extend %h-m-2;
             @extend %dark-color-m-;
             height: 62px;
             width: 586px;
+            align-self: center;
+            justify-self: end;
 
         }
 
         .lista {
-            grid-area: 6 / 1 / span 1 / sapan 2;
+            grid-area: 6 / 1 / span 1 / span 2;
             display: grid;
-            grid-template: 1fr 1fr / repeat(4, 1fr);
+            grid-template: 1fr 1fr / repeat(4, 220px);
             grid-auto-flow: column;
             align-items: center;
             list-style: none;
+            margin: auto;
+            column-gap: 40px;
 
 
             .with-img {
                 justify-self: center;
+                width: 104px;
+                height: 104px;
             }
 
             .with-words {
                 font-family: 'IBM Plex Sans', sans-serif;
                 font-size: 24px;
                 line-height: 32px;
-                width: 288px;
+                width: 220px;
                 height: 32px;
-                padding: 0px 16px 0px 16px;
+                justify-self: center;
                 text-align: center;
 
                 a {
@@ -176,6 +183,9 @@ main {
     .three {
         background: linear-gradient(177deg, #fff 14%, #0000FF 14.3%, #0000A3 87%);
         height: 518px;
+        position: absolute;
+        top: 3299px;
+
         .ultimas-novedades {
             @extend %h-m-2;
             width: 692px;
