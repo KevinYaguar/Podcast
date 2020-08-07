@@ -13,7 +13,8 @@
 
 main {
     .one {
-        background: linear-gradient(174deg, #fff 14%, #0000FF 14.3%, #0000A3 87%, #fff 87.3%);
+        clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+        background: linear-gradient(to right, #0000A3, #0000FF);
         padding-left: 11px;
         padding-right: 11px;
         height: 1042.6px;

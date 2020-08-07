@@ -10,7 +10,7 @@ body{
 
 
 /*Mobil*/
-@media (max-width:1439px) {
+@media (max-width:1200px) {
     @import "./mobile-styles/m-header.scss";
     @import "./mobile-styles/m-main.scss";
     @import "./mobile-styles/m-footer.scss";
@@ -28,7 +28,7 @@ body{
 
 */
 /*Desktop*/
-@media (min-width:1440px) {
+@media (min-width:1201px) {
     @import "./desktop-styles/d-header.scss";
     @import "./desktop-styles/d-main.scss";
     @import "./desktop-styles/d-footer.scss";

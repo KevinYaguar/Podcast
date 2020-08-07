@@ -21,7 +21,10 @@ main .two .lista .with-words, main .two .lista #repensando {
 }
 
 main .one {
-  background: linear-gradient(174deg, #fff 14%, #0000FF 14.3%, #0000A3 87%, #fff 87.3%);
+  -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0000A3), to(#0000FF));
+  background: linear-gradient(to right, #0000A3, #0000FF);
   padding-left: 11px;
   padding-right: 11px;
   height: 1042.6px;

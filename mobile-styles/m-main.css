@@ -21,7 +21,10 @@ main .two .lista .with-words, main .two .lista #repensando {
 }
 
 main .one {
-  background: linear-gradient(174deg, #fff 3%, #0000FF 3.1%, #0000A3 97%, #fff 0%);
+  -webkit-clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+          clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0000A3), to(#0000FF));
+  background: linear-gradient(to top, #0000A3, #0000FF);
   padding-left: 11px;
   padding-right: 11px;
   height: 1203.5px;
@@ -43,7 +46,14 @@ main .one .podcasts iframe {
 
 main .two {
   position: relative;
-  top: -57px;
+  top: -80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .two .phone {
@@ -54,6 +64,8 @@ main .two .phone {
   position: relative;
   left: -20px;
   height: 519px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 main .two .phone img {
@@ -149,7 +161,20 @@ main .two .lista #repensando a {
 }
 
 main .three {
-  background: linear-gradient(174deg, #fff 15%, #0000FF 16%, #0000A3 100%);
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#0000A3), to(#0000FF));
+  background: linear-gradient(to top right, #0000A3, #0000FF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .three .ultimas-novedades {

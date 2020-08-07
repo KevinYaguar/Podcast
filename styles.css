@@ -9,7 +9,7 @@ body {
 }
 
 /*Mobil*/
-@media (max-width: 1439px) {
+@media (max-width: 1200px) {
   /*Encabezados*/
   header header h2 {
     font-size: 36px;
@@ -169,7 +169,10 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
   }
   main .one {
-    background: linear-gradient(174deg, #fff 3%, #0000FF 3.1%, #0000A3 97%, #fff 0%);
+    -webkit-clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+            clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#0000A3), to(#0000FF));
+    background: linear-gradient(to top, #0000A3, #0000FF);
     padding-left: 11px;
     padding-right: 11px;
     height: 1203.5px;
@@ -188,7 +191,14 @@ body {
   }
   main .two {
     position: relative;
-    top: -57px;
+    top: -80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main .two .phone {
     display: -webkit-box;
@@ -198,6 +208,8 @@ body {
     position: relative;
     left: -20px;
     height: 519px;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   main .two .phone img {
     width: 100%;
@@ -279,7 +291,20 @@ body {
     font-weight: bold;
   }
   main .three {
-    background: linear-gradient(174deg, #fff 15%, #0000FF 16%, #0000A3 100%);
+    -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#0000A3), to(#0000FF));
+    background: linear-gradient(to top right, #0000A3, #0000FF);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .three .ultimas-novedades {
     width: 288px;
@@ -356,7 +381,7 @@ body {
 
 */
 /*Desktop*/
-@media (min-width: 1440px) {
+@media (min-width: 1201px) {
   /*Encabezados*/
   header header h2 {
     font-size: 64px;
@@ -496,7 +521,10 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
   }
   main .one {
-    background: linear-gradient(174deg, #fff 14%, #0000FF 14.3%, #0000A3 87%, #fff 87.3%);
+    -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#0000A3), to(#0000FF));
+    background: linear-gradient(to right, #0000A3, #0000FF);
     padding-left: 11px;
     padding-right: 11px;
     height: 1042.6px;

@@ -1,19 +1,29 @@
 /*Encabezados*/
-%h2-m-m{
+%h2-m-m {
     font-size: 36px;
     line-height: 42px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
 }
+
 /*Color oscuro*/
-%dark-color-m-m{color: #060A24;}
+%dark-color-m-m {
+    color: #060A24;
+}
+
 /*Fuentes*/
-%font-mono-m-m{font-family: 'IBM Plex Mono', monospace;}
-%font-sans-m-m{font-family: 'IBM Plex Sans', sans-serif;}
+%font-mono-m-m {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+%font-sans-m-m {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
 
 main {
-    .one{
-        background: linear-gradient(174deg, #fff 3%, #0000FF 3.1%, #0000A3 97%, #fff 0%);
+    .one {
+        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+        background: linear-gradient(to top, #0000A3, #0000FF);
         padding-left: 11px;
         padding-right: 11px;
         height: 1203.5px;
@@ -35,24 +45,29 @@ main {
 
             }
         }
-       
+
     }
-    .two{
+
+    .two {
         position: relative;
-        top: -57px;
+        top: -80px;
+        display: flex;
+        flex-direction: column;
+
         .phone {
             display: flex;
             width: 360px;
             position: relative;
             left: -20px;
             height: 519px;
-        
+            align-self: center;
+
             img {
                 width: 100%;
             }
-        
+
         }
-        
+
         .donde {
             @extend %dark-color-m-m;
             height: 84px;
@@ -60,6 +75,7 @@ main {
             padding: 27px 16px 8px 16px;
             @extend %h2-m-m;
         }
+
         .posturings p {
             @extend %font-mono-m-m;
             @extend %dark-color-m-m;
@@ -69,6 +85,7 @@ main {
             width: 288px;
             padding: 0px 16px 54px 16px;
         }
+
         .invitados {
             @extend %dark-color-m-m;
             height: 84px;
@@ -76,15 +93,17 @@ main {
             padding: 0px 16px 14px 16px;
             @extend %h2-m-m;
         }
+
         .galeria {
             width: 100%;
             display: flex;
             flex-direction: column;
-        
+
             img {
                 width: 100%;
             }
         }
+
         .algunos {
             @extend %h2-m-m;
             @extend %dark-color-m-m;
@@ -92,17 +111,18 @@ main {
             width: 288px;
             padding: 48px 16px 37px 16px;
         }
+
         .lista {
             display: flex;
             flex-direction: column;
             align-items: center;
             list-style: none;
             padding-bottom: 42px;
-        
+
             .with-img {
                 padding: 13px 108px;
             }
-        
+
             .with-words {
                 @extend %font-sans-m-m;
                 font-size: 24px;
@@ -111,14 +131,14 @@ main {
                 height: 32px;
                 padding: 0px 16px 0px 16px;
                 text-align: center;
-        
+
                 a {
                     text-decoration: none;
                     @extend %dark-color-m-m;
                     font-weight: bold;
                 }
             }
-        
+
             #repensando {
                 @extend %font-sans-m-m;
                 font-size: 24px;
@@ -127,19 +147,25 @@ main {
                 height: 64px;
                 padding: 0px 16px;
                 text-align: center;
-        
+
                 a {
                     text-decoration: none;
                     @extend %dark-color-m-m;
                     font-weight: bold;
                 }
             }
+        }
+
+
     }
-    
-    
-    }
-    .three{
-        background: linear-gradient(174deg, #fff 15%, #0000FF 16%, #0000A3 100%);
+
+    .three {
+        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+        background: linear-gradient(to top right, #0000A3, #0000FF);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .ultimas-novedades {
             @extend %h2-m-m;
             width: 288px;
@@ -148,6 +174,7 @@ main {
             text-align: center;
             color: #FFFFFF;
         }
+
         .escucha {
             background-color: #00F3BB;
             width: 288px;
@@ -156,20 +183,10 @@ main {
             font-size: 16px;
             font-weight: 500;
             margin: 0px 16px 67px 16px;
-        
+
             p {
                 padding: 13px 43px;
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
