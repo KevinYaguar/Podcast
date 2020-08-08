@@ -52,10 +52,19 @@ header {
         @extend %dark-color-h-d;
         font-size: 16px;
         line-height: 24px;
-        width: 628px;
-        height: 48px;
+        display: inline;
         
-        padding-left: 100px;
+        
+    }
+    .sentences{
+        width: 628px;
+        padding-left: 100px
+    }
+    .second-sentence{
+        padding: 0;
+    }
+    .first-sentence::after{
+        content: " y la tecnología";
     }
 }
 

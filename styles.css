@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +27,8 @@ body {
     font-family: 'IBM Plex Mono', monospace;
   }
   header {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   header header {
     display: -webkit-box;
@@ -36,6 +37,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 16px;
   }
   header header .hello {
     width: 85px;
@@ -54,9 +56,7 @@ body {
   header p {
     font-size: 14px;
     line-height: 22px;
-    width: 288px;
-    height: 66px;
-    padding-top: 16px;
+    display: inline;
   }
   header nav {
     display: -webkit-box;
@@ -69,11 +69,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 44px;
+    height: 0.8%;
   }
   header nav img {
-    padding-top: 10px;
-    padding-bottom: 10px;
     width: 24px;
     height: 24px;
   }
@@ -428,9 +426,17 @@ body {
   header p {
     font-size: 16px;
     line-height: 24px;
+    display: inline;
+  }
+  header .sentences {
     width: 628px;
-    height: 48px;
     padding-left: 100px;
+  }
+  header .second-sentence {
+    padding: 0;
+  }
+  header .first-sentence::after {
+    content: " y la tecnología";
   }
   #btn-conoce {
     background-color: #00F3BB;
@@ -552,8 +558,9 @@ body {
     border: 0;
   }
   main .two {
-    position: absolute;
-    top: 1323px;
+    margin-top: -175px;
+    z-index: 2;
+    position: relative;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 330px 330px 162px 728px 182px 197px;
@@ -630,8 +637,8 @@ body {
         flex-wrap: wrap;
   }
   main .two .galeria img {
-    width: 480px;
-    height: 364px;
+    width: 33.3%;
+    height: 50%;
   }
   main .two .algunos {
     -ms-grid-row: 5;
@@ -701,8 +708,16 @@ body {
   main .three {
     background: linear-gradient(177deg, #fff 14%, #0000FF 14.3%, #0000A3 87%);
     height: 518px;
-    position: absolute;
-    top: 3299px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .three .ultimas-novedades {
     width: 692px;
@@ -738,9 +753,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: absolute;
-    top: 3817px;
-    width: 100%;
   }
   .copyright {
     width: 227px;

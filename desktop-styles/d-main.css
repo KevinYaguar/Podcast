@@ -56,8 +56,9 @@ main .one .podcasts iframe {
 }
 
 main .two {
-  position: absolute;
-  top: 1323px;
+  margin-top: -175px;
+  z-index: 2;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 330px 330px 162px 728px 182px 197px;
@@ -143,8 +144,8 @@ main .two .galeria {
 }
 
 main .two .galeria img {
-  width: 480px;
-  height: 364px;
+  width: 33.3%;
+  height: 50%;
 }
 
 main .two .algunos {
@@ -222,8 +223,16 @@ main .two .lista #repensando a {
 main .three {
   background: linear-gradient(177deg, #fff 14%, #0000FF 14.3%, #0000A3 87%);
   height: 518px;
-  position: absolute;
-  top: 3299px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .three .ultimas-novedades {

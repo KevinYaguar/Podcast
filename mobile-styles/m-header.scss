@@ -12,13 +12,14 @@
 
 
 header {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
 
     header {
         display: flex;
         flex-wrap: wrap;
         padding: 0;
+        margin-bottom: 16px;
 
         h2{
             @extend %h2-h-m;
@@ -49,20 +50,18 @@ header {
         @extend %dark-color-h-m;
         font-size: 14px;
         line-height: 22px;
-        width: 288px;
-        height: 66px;
-        padding-top: 16px;
+        display: inline;
+        
     }
+    
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 44px;
+        height: 0.8%;
     
         img {
-            padding-top: 10px;
-            padding-bottom: 10px;
             width: 24px;
             height: 24px;
         }
