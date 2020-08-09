@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -29,6 +29,9 @@ body{
 */
 /*Desktop*/
 @media (min-width:1201px) {
+    body{
+        width: 100%;
+    }
     @import "./desktop-styles/d-header.scss";
     @import "./desktop-styles/d-main.scss";
     @import "./desktop-styles/d-footer.scss";

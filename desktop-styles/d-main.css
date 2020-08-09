@@ -61,7 +61,8 @@ main .two {
   position: relative;
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-rows: 330px 330px 162px 728px 182px 197px;
+  -ms-grid-columns: (1fr)[2];
       grid-template: 330px 330px 162px 728px 182px 197px/repeat(2, 1fr);
 }
 
@@ -170,7 +171,8 @@ main .two .lista {
   grid-area: 6 / 1 / span 1 / span 2;
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: (220px)[4];
       grid-template: 1fr 1fr/repeat(4, 220px);
   grid-auto-flow: column;
   -webkit-box-align: center;
