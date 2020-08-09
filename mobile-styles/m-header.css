@@ -109,6 +109,10 @@ header #btn-menu:checked + label .fa-bars {
   display: none;
 }
 
+header #btn-menu:checked + label .fa-bars {
+  display: none;
+}
+
 header #btn-menu:checked ~ .menu {
   display: -webkit-box;
   display: -ms-flexbox;
