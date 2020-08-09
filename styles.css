@@ -10,7 +10,7 @@ body {
 }
 
 /*Mobil*/
-@media (max-width: 1399px) {
+@media (max-width: 900px) {
   /*Encabezados*/
   header header h2 {
     font-size: 36px;
@@ -387,7 +387,7 @@ body {
 
 */
 /*Desktop*/
-@media (min-width: 1400px) {
+@media (min-width: 901px) {
   /*Encabezados*/
   header header h2 {
     font-size: 64px;
@@ -550,19 +550,20 @@ body {
     padding: 186px 0px 26px 189px;
   }
   main .one .podcasts {
-    padding: 0 100px 64px 100px;
     margin: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 232px 232px;
-    -ms-grid-columns: 584px 584px;
-        grid-template: 232px 232px / 584px 584px;
+    -ms-grid-columns: 40.6% 40.6%;
+        grid-template: 232px 232px / 40.6% 40.6%;
     grid-gap: 72px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .one .podcasts iframe {
-    width: 584px;
-    height: 232px;
-    padding-bottom: 11px;
+    width: 100%;
+    height: 100%;
     border: 0;
   }
   main .two {
@@ -572,7 +573,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 330px 330px 162px 728px 182px 197px;
-    
+    -ms-grid-columns: (1fr)[2];
         grid-template: 330px 330px 162px 728px 182px 197px/repeat(2, 1fr);
   }
   main .two .phone {
@@ -671,7 +672,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
-    
+    -ms-grid-columns: (220px)[4];
         grid-template: 1fr 1fr/repeat(4, 220px);
     grid-auto-flow: column;
     -webkit-box-align: center;
