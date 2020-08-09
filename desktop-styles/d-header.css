@@ -1,4 +1,154 @@
+@charset "UTF-8";
+/*Encabezados*/
+header header h2 {
+  font-size: 64px;
+  line-height: 84px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+}
+
+/*Color oscuro*/
+header header h2, header p, nav nav .menu li a {
+  color: #060A24;
+}
+
+/*Fuentes*/
+header p, #btn-conoce, nav nav .menu {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 header {
-  background-color: red;
+  padding-left: 100px;
+}
+
+header header {
+  padding-top: 120px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header header .hello {
+  width: 152px;
+}
+
+header header .world {
+  width: 179px;
+  text-decoration: line-through;
+  text-align: end;
+}
+
+header header .pale {
+  width: 391px;
+  text-align: end;
+}
+
+header header .dot {
+  width: 18px;
+  color: #0000ff;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 24px;
+  display: inline;
+}
+
+header .sentences {
+  width: 628px;
+  padding-left: 100px;
+}
+
+header .second-sentence {
+  padding: 0;
+}
+
+header .first-sentence::after {
+  content: " y la tecnología";
+}
+
+#btn-conoce {
+  background-color: #00F3BB;
+  width: 226px;
+  height: 56px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 56px 0 5px 100px;
+  padding: 16px 59px;
+  border: 0;
+  line-height: 24px;
+}
+
+#btn-conoce:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+  background: linear-gradient(to right, #00F0B8, #0000FE);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  padding-left: 0;
+  padding-right: 100px;
+  /*.navegador*/
+}
+
+nav img {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 36px;
+  height: 36px;
+}
+
+nav nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 3px;
+}
+
+nav nav label:hover {
+  cursor: pointer;
+}
+
+nav nav #btn-menu {
+  display: none;
+}
+
+nav nav label {
+  display: none;
+}
+
+nav nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+nav nav .menu :first-child:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+nav nav .menu li {
+  padding-left: 48px;
+}
+
+nav nav .menu li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=d-header.css.map */

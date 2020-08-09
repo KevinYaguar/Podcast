@@ -1,1 +1,149 @@
-header{background-color: red;}
+/*Encabezados*/
+%h2-h-d{
+    font-size: 64px;
+    line-height: 84px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+}
+/*Color oscuro*/
+%dark-color-h-d{color: #060A24;}
+/*Fuentes*/
+%font-mono-h-d{font-family: 'IBM Plex Mono', monospace;}
+
+
+header {
+    padding-left: 100px;
+    
+
+    header {
+        padding-top: 120px;
+        padding-left: 100px;       
+        display: flex;
+        flex-wrap: wrap;
+    
+        h2 {
+            @extend %h2-h-d;
+            @extend %dark-color-h-d;
+        }
+
+        .hello {
+            width: 152px;
+        }
+
+        .world {
+            width: 179px;
+            text-decoration: line-through;
+            text-align: end;
+        }
+
+        .pale {
+            width: 391px;
+            text-align: end;
+        }
+
+        .dot {
+            width: 18px;
+            color: #0000ff;
+        }
+    }
+
+    p {
+        @extend %font-mono-h-d;
+        @extend %dark-color-h-d;
+        font-size: 16px;
+        line-height: 24px;
+        display: inline;
+        
+        
+    }
+    .sentences{
+        width: 628px;
+        padding-left: 100px
+    }
+    .second-sentence{
+        padding: 0;
+    }
+    .first-sentence::after{
+        content: " y la tecnología";
+    }
+}
+
+
+#btn-conoce {
+    background-color: #00F3BB;
+    width: 226px;
+    height: 56px;
+    @extend %font-mono-h-d;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 56px 0 5px 100px;
+    padding: 16px 59px;
+    border: 0;
+    line-height: 24px;
+}
+
+#btn-conoce:hover {
+    color: #fff;
+    background: linear-gradient(to right, #00F0B8, #0000FE);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-left: 0;
+    padding-right: 100px;
+
+    img {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        width: 36px;
+        height: 36px;
+    }
+
+    /*.navegador*/
+    nav {
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 3px;
+        
+
+        label:hover {
+            cursor: pointer;
+        }
+
+        #btn-menu {
+            display: none;
+        }
+
+        label {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            @extend %font-mono-h-d;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 500;
+            :first-child:hover{
+                color: #00F3BB;
+                text-decoration: line-through;
+
+            }
+                li{
+                padding-left: 48px;
+
+                a{
+                    text-decoration: none;
+                    @extend %dark-color-h-d;
+                }
+            }
+        }
+
+    }
+}

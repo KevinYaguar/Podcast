@@ -1,3 +1,42 @@
-footer{
-    background-color: green;
+/*Color oscuro*/
+%dark-color-f-d{color: #060A24;}
+/*Fuentes*/
+%font-mono-f-d{font-family: 'IBM Plex Mono', monospace;}
+
+
+footer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.copyright {
+    width: 227px;
+    height: 22px;
+    @extend %font-mono-f-d;
+    font-size: 14px;
+    margin: 36px 0px 31px 100px;
+
+    p {
+        padding: 13px 43px 13px 43px;
+    }
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    padding-right: 100px;
+    justify-content: space-between;
+    li{
+        padding: 36px 0px 31px 36px; 
+        a{
+            @extend %dark-color-f-d;
+            width: 16px;
+            height: 28px;
+            font-size: 16px;  
+        }
+    }
 }

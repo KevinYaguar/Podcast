@@ -1,4 +1,52 @@
+/*Color oscuro*/
+.social-list li a {
+  color: #060A24;
+}
+
+/*Fuentes*/
+.copyright {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 footer {
-  background-color: green;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright {
+  width: 227px;
+  height: 22px;
+  font-size: 14px;
+  margin: 36px 0px 31px 100px;
+}
+
+.copyright p {
+  padding: 13px 43px 13px 43px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-right: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-list li {
+  padding: 36px 0px 31px 36px;
+}
+
+.social-list li a {
+  width: 16px;
+  height: 28px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=d-footer.css.map */
