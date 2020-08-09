@@ -103,7 +103,8 @@ header {
         flex-direction: column;
         justify-content: space-around;
         right: 0;
-        width: 320px;
+        width: 100%;
+        z-index: 1;
         background-color: #0000EC;
         position: absolute;       
         top: 44px;
@@ -111,7 +112,11 @@ header {
         padding: 0;
         margin: 0;
         height: 224px;
-        
+        :first-child:hover{
+            color: #00F3BB;
+            text-decoration: line-through;
+
+        }
         li {
             width: 87px;
             height: 28px;

@@ -218,7 +218,10 @@ main {
             font-size: 18px;
             font-weight: 500;
             margin: 0px 548px 151px 547px;
-
+            a{
+                text-decoration: none;
+                @extend %dark-color-m-d;
+            }
             p {
                 padding: 16px 59px;
             }

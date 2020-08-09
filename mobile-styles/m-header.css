@@ -120,7 +120,8 @@ header #btn-menu:checked ~ .menu {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   right: 0;
-  width: 320px;
+  width: 100%;
+  z-index: 1;
   background-color: #0000EC;
   position: absolute;
   top: 44px;
@@ -128,6 +129,11 @@ header #btn-menu:checked ~ .menu {
   padding: 0;
   margin: 0;
   height: 224px;
+}
+
+header #btn-menu:checked ~ .menu :first-child:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
 }
 
 header #btn-menu:checked ~ .menu li {

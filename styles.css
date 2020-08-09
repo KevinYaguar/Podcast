@@ -10,7 +10,7 @@ body {
 }
 
 /*Mobil*/
-@media (max-width: 1200px) {
+@media (max-width: 1399px) {
   /*Encabezados*/
   header header h2 {
     font-size: 36px;
@@ -114,7 +114,8 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     right: 0;
-    width: 320px;
+    width: 100%;
+    z-index: 1;
     background-color: #0000EC;
     position: absolute;
     top: 44px;
@@ -122,6 +123,10 @@ body {
     padding: 0;
     margin: 0;
     height: 224px;
+  }
+  header #btn-menu:checked ~ .menu :first-child:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
   }
   header #btn-menu:checked ~ .menu li {
     width: 87px;
@@ -156,7 +161,7 @@ body {
     font-weight: 100;
   }
   /*Color oscuro*/
-  main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
+  main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a, main .three .escucha a {
     color: #060A24;
   }
   /*Fuentes*/
@@ -319,6 +324,9 @@ body {
     font-weight: 500;
     margin: 0px 16px 67px 16px;
   }
+  main .three .escucha a {
+    text-decoration: none;
+  }
   main .three .escucha p {
     padding: 13px 43px;
   }
@@ -379,7 +387,7 @@ body {
 
 */
 /*Desktop*/
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
   /*Encabezados*/
   header header h2 {
     font-size: 64px;
@@ -516,7 +524,7 @@ body {
     font-weight: 100;
   }
   /*Color oscuro*/
-  main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
+  main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a, main .three .escucha a {
     color: #060A24;
   }
   /*Fuentes*/
@@ -564,7 +572,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 330px 330px 162px 728px 182px 197px;
-    -ms-grid-columns: (1fr)[2];
+    
         grid-template: 330px 330px 162px 728px 182px 197px/repeat(2, 1fr);
   }
   main .two .phone {
@@ -663,7 +671,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
-    -ms-grid-columns: (220px)[4];
+    
         grid-template: 1fr 1fr/repeat(4, 220px);
     grid-auto-flow: column;
     -webkit-box-align: center;
@@ -733,6 +741,9 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin: 0px 548px 151px 547px;
+  }
+  main .three .escucha a {
+    text-decoration: none;
   }
   main .three .escucha p {
     padding: 16px 59px;

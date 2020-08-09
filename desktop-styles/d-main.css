@@ -7,7 +7,7 @@ main .one h2, main .two .donde, main .two .invitados, main .two .algunos, main .
 }
 
 /*Color oscuro*/
-main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a {
+main .two .donde, main .two .posturings p, main .two .invitados, main .two .algunos, main .two .lista .with-words a, main .two .lista #repensando a, main .three .escucha a {
   color: #060A24;
 }
 
@@ -250,6 +250,10 @@ main .three .escucha {
   font-size: 18px;
   font-weight: 500;
   margin: 0px 548px 151px 547px;
+}
+
+main .three .escucha a {
+  text-decoration: none;
 }
 
 main .three .escucha p {
