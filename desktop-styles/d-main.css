@@ -234,12 +234,14 @@ main .three {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .three .ultimas-novedades {
   width: 692px;
   height: 62px;
-  padding: 213px 374px 36px 374px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -250,7 +252,6 @@ main .three .escucha {
   height: 56px;
   font-size: 18px;
   font-weight: 500;
-  margin: 0px 548px 151px 547px;
 }
 
 main .three .escucha a {
