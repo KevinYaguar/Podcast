@@ -199,13 +199,14 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
 
         .ultimas-novedades {
             @extend %h2-m-d;
             width: 692px;
             height: 62px;
-            padding: 213px 374px 36px 374px;
+            
             text-align: center;
             color: #FFFFFF;
         }
@@ -217,7 +218,7 @@ main {
             @extend %font-mono-m-d;
             font-size: 18px;
             font-weight: 500;
-            margin: 0px 548px 151px 547px;
+            
             a{
                 text-decoration: none;
                 @extend %dark-color-m-d;
