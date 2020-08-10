@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Encabezados*/
-header header h2 {
+header .inheader h2 {
   font-size: 64px;
   line-height: 84px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -8,7 +8,7 @@ header header h2 {
 }
 
 /*Color oscuro*/
-header header h2, header p, nav nav .menu li a {
+header .inheader h2, header p, nav nav .menu li a {
   color: #060A24;
 }
 
@@ -21,7 +21,7 @@ header {
   padding-left: 100px;
 }
 
-header header {
+header .inheader {
   padding-top: 120px;
   padding-left: 100px;
   display: -webkit-box;
@@ -31,22 +31,22 @@ header header {
       flex-wrap: wrap;
 }
 
-header header .hello {
+header .inheader .hello {
   width: 152px;
 }
 
-header header .world {
+header .inheader .world {
   width: 179px;
   text-decoration: line-through;
   text-align: end;
 }
 
-header header .pale {
+header .inheader .pale {
   width: 391px;
   text-align: end;
 }
 
-header header .dot {
+header .inheader .dot {
   width: 18px;
   color: #0000ff;
 }

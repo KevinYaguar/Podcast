@@ -1,5 +1,5 @@
 /*Encabezados*/
-header header h2 {
+header .inheader h2 {
   font-size: 36px;
   line-height: 42px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -7,7 +7,7 @@ header header h2 {
 }
 
 /*Color oscuro*/
-header header h2, header p {
+header .inheader h2, header p {
   color: #060A24;
 }
 
@@ -21,7 +21,7 @@ header {
   padding-right: 5%;
 }
 
-header header {
+header .inheader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,21 +31,21 @@ header header {
   margin-bottom: 16px;
 }
 
-header header .hello {
+header .inheader .hello {
   width: 85px;
 }
 
-header header .world {
+header .inheader .world {
   width: 101px;
   text-decoration: line-through;
   text-align: end;
 }
 
-header header .pale {
+header .inheader .pale {
   width: 212px;
 }
 
-header header .dot {
+header .inheader .dot {
   width: 10px;
 }
 
